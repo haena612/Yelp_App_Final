@@ -8,7 +8,23 @@
 
 import UIKit
 
+@objc protocol FilterTableViewCellDelegate {
+    optional func filterTableViewCell(filterTableViewCell: FilterTableViewCell, didChangeValue value: Bool)
+}
+
 class FilterTableViewCell: UITableViewCell {
+
+    //var flags = true
+    @IBOutlet weak var propertyLabel: UILabel!
+    @IBOutlet weak var propertyButton: UISwitch!
+    
+    weak var delegate: FilterTableViewCellDelegate?
+    
+    @IBAction func onSwitchAction(sender: UISwitch) {
+        print("switching to \(propertyButton.on)")
+       // flags = !flags
+        delegate?.filterTableViewCell?(self, didChangeValue: propertyButton.on)
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

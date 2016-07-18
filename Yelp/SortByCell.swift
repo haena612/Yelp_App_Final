@@ -8,8 +8,16 @@
 
 import UIKit
 
+@objc protocol SortByCellDelegate {
+    optional func sortByCell(sortByCell: SortByCell, didUpdateSortby SortbyValue: String)
+}
+
 class SortByCell: UITableViewCell {
 
+
+    @IBOutlet weak var sortByLabel: UILabel!
+    weak var delegate: SortByCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

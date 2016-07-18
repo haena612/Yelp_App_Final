@@ -16,6 +16,14 @@
 		22AAAA991AEA0A9700A544AF /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAAA981AEA0A9700A544AF /* Business.swift */; };
 		22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */; };
 		90B718C590BD546DEFEF0D61 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3C5CF4FD317D72ABE2AAC4 /* Pods.framework */; };
+		E7A087B81D3628FC00102879 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A087B71D3628FC00102879 /* BusinessCell.swift */; };
+		E7A087BF1D367EE000102879 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A087BE1D367EE000102879 /* FilterViewController.swift */; };
+		E7A087C11D36831600102879 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A087C01D36831600102879 /* FilterTableViewCell.swift */; };
+		E7A087D21D391E6700102879 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A087D11D391E6700102879 /* DealCell.swift */; };
+		E7A087D41D391E7900102879 /* DistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A087D31D391E7900102879 /* DistanceCell.swift */; };
+		E7A087D61D391E8F00102879 /* SortByCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A087D51D391E8F00102879 /* SortByCell.swift */; };
+		E7A087D81D39F45200102879 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A087D71D39F45200102879 /* Filter.swift */; };
+		E7A087DC1D3CCC1F00102879 /* ViewAllCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A087DB1D3CCC1F00102879 /* ViewAllCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		97D8B2E3FFD1AF4F4A707E47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA3C5CF4FD317D72ABE2AAC4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD540129B10DFE60E8C24E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E7A087B71D3628FC00102879 /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		E7A087BE1D367EE000102879 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		E7A087C01D36831600102879 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		E7A087D11D391E6700102879 /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
+		E7A087D31D391E7900102879 /* DistanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceCell.swift; sourceTree = "<group>"; };
+		E7A087D51D391E8F00102879 /* SortByCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortByCell.swift; sourceTree = "<group>"; };
+		E7A087D71D39F45200102879 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		E7A087DB1D3CCC1F00102879 /* ViewAllCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +104,7 @@
 		222D8A5719CCF9F900D2DB53 /* Yelp */ = {
 			isa = PBXGroup;
 			children = (
+				E7A087B61D3628DC00102879 /* Views */,
 				22AAAA9A1AEA0AA100A544AF /* Models */,
 				222D8A7A19CCFAAA00D2DB53 /* API */,
 				22AAAA9D1AEA1EC600A544AF /* View Controllers */,
@@ -137,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				22AAAA981AEA0A9700A544AF /* Business.swift */,
+				E7A087D71D39F45200102879 /* Filter.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -145,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */,
+				E7A087BE1D367EE000102879 /* FilterViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -155,6 +174,19 @@
 				AA3C5CF4FD317D72ABE2AAC4 /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7A087B61D3628DC00102879 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7A087B71D3628FC00102879 /* BusinessCell.swift */,
+				E7A087C01D36831600102879 /* FilterTableViewCell.swift */,
+				E7A087D11D391E6700102879 /* DealCell.swift */,
+				E7A087D31D391E7900102879 /* DistanceCell.swift */,
+				E7A087D51D391E8F00102879 /* SortByCell.swift */,
+				E7A087DB1D3CCC1F00102879 /* ViewAllCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		F4A9A6AAA6A538FE245C4A17 /* Pods */ = {
@@ -319,9 +351,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A087D41D391E7900102879 /* DistanceCell.swift in Sources */,
+				E7A087BF1D367EE000102879 /* FilterViewController.swift in Sources */,
+				E7A087D81D39F45200102879 /* Filter.swift in Sources */,
+				E7A087D61D391E8F00102879 /* SortByCell.swift in Sources */,
+				E7A087B81D3628FC00102879 /* BusinessCell.swift in Sources */,
 				22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */,
 				22AAAA991AEA0A9700A544AF /* Business.swift in Sources */,
 				222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */,
+				E7A087DC1D3CCC1F00102879 /* ViewAllCell.swift in Sources */,
+				E7A087D21D391E6700102879 /* DealCell.swift in Sources */,
+				E7A087C11D36831600102879 /* FilterTableViewCell.swift in Sources */,
 				222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

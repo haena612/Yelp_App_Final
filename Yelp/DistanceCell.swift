@@ -8,8 +8,16 @@
 
 import UIKit
 
+@objc protocol DistanceCellDelegate {
+    optional func distanceCell(distanceCell: DistanceCell, didUpdateDistance distanceValue: String)
+}
+
 class DistanceCell: UITableViewCell {
 
+    weak var delegate: DistanceCellDelegate?
+    
+    @IBOutlet weak var distanceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

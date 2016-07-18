@@ -10,6 +10,16 @@ import UIKit
 
 class BusinessCell: UITableViewCell {
 
+    @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var distance: UILabel!
+    @IBOutlet weak var ratingImage: UIImageView!
+    @IBOutlet weak var numReview: UILabel!
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var categories: UILabel!
+    
+    var business: Business!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
